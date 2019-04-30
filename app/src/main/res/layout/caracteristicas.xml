@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="Valor"
+                android:id="@+id/etValorFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <TextView />
+                    <TextView android:text="Prof."/>
+                    <TextView android:text="Exp."/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Tirada de salvación"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/cbCompSalvFue"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Atletismo"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/cbCompAtletismo"/>
+                    <CheckBox
+                        android:id="@+id/cbExpAtletismo"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Acrobacias"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                    <CheckBox
+                        android:id="@+id/cbCompAcrobacias"/>
+                    <CheckBox
+                        android:id="@+id/cbExpAcrobacias"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
